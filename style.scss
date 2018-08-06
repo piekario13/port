@@ -1,0 +1,133 @@
+@import 'partials';
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Marck+Script');
+@import url('https://fonts.googleapis.com/css?family=Anton|Barlow+Condensed|Marck+Script');
+
+$quote: 'Marck Script', cursive;
+$smallFont: 'Barlow Condensed', sans-serif;
+$bigFont: 'Anton', sans-serif;
+
+$background: #F5F5F5;
+$btn: #7CFC00;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+// * {
+//   border: 1px solid red;
+// }
+  
+  /*HEADER*/
+header {
+  position: fixed;
+  background-color: $background;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 0.2px 0 $btn;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+  i {
+    margin: 8px;
+    float: left;
+    font-size: 40px;
+    color: #000;
+    cursor: pointer;
+      &:hover {
+        color:  $btn;
+        cursor: pointer;
+        transform: scale(1.20);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+  }
+  ul {
+    list-style-type: none;
+    float: right;
+  }
+    li {
+      display: inline-block;
+    }
+      header a {
+        color: #000;
+        text-decoration: none;
+        width: 120px;
+        height: 50px;
+        line-height: 50px;
+        display: block;
+        padding: 0 20px;
+        margin: 5px 0 0 10px;
+        font: 200% $smallFont;
+          &:hover {
+            color:  $btn;
+            cursor: pointer;
+            transform: scale(1.20);
+            text-decoration: none;
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+          }
+      }
+
+      /*JUMBOTRON*/
+
+.background {
+  background-color: #fff;
+}
+  .quotation h1 {
+    margin-top: 250px;
+    font: 300% $quote;
+  }
+  .quotation h6 {
+    font: 100% $smallFont;
+    text-align: right;
+  }
+  .quotation .btn {
+    margin-top: 80px;
+    background-color: #fff;
+    border: none;
+    color: $btn;
+    border: 1px solid #000;
+    font: 300% $smallFont;
+      &:hover {
+        color:  #fff;
+        background-color: $btn;
+        border: none;
+        cursor: pointer;
+        transform: scale(1.20);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+      }
+  }
+  
+/*ABOUT*/
+  
+.image {
+  background-image: url('Images/mann.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  margin-top: 80px;
+}
+  .puzzle {
+    display: inline-block;
+    top: 70px;
+    width: 800px;
+    left: 20px;
+  }
+    .puzzle .im {
+      font-size: 300px;
+      margin: -37.5px;
+      color: $background;
+      opacity: 0.9;
+        &:hover {
+          color: $btn;
+          cursor: pointer;
+          transform: scale(1.02);
+          -webkit-transition: all 0.5s ease-in-out 0s;
+          transition: all 0.4s ease-in-out 0s;
+          opacity: 0.89;
+        }
+    }
