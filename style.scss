@@ -131,10 +131,21 @@ header {
           -webkit-transition: all 0.5s ease-in-out 0s;
           transition: all 0.4s ease-in-out 0s;
           opacity: 0.89;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: #fff;
+          color: white;
+          text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+          // -2px -2px 0 #000,
+          // 2px -2px 0 #000,
+          // -2px 1px 0 #000,
+          // 2px 2px 0 #000;  
         }
     }
       .puzzle .puz2 {
         color: #000;
+          &:hover {
+            color: #000;
+        }
       }
       .puzzle .puz6 {
         color: #000;
@@ -142,10 +153,16 @@ header {
       .puzzle .puz7 {
         color: #000;
         transform: rotate(8deg);
+          &:hover {
+            transform: rotate(8deg);
+          }
       }
       .puzzle .puz3 {
         color: #fff;
         transform: rotate(-2deg);
+          &:hover{
+            transform: rotate(-2deg);
+          }
       }
       .puzzle .puz4 {
         color: #fff;
