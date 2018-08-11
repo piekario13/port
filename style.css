@@ -134,7 +134,7 @@
 
 /*HEADER*/
 header {
-  position: fixed;
+  position: absolute;
   background-color: #F5F5F5;
   width: 100%;
   height: 50px;
@@ -220,13 +220,15 @@ header a {
   display: inline-block;
   top: 70px;
   width: 800px;
-  left: 20px; }
+  left: 20px;
+  transform: rotate(-2deg); }
 
 .puzzle .im {
   font-size: 300px;
   margin: -37.5px;
   color: #F5F5F5;
-  opacity: 0.9; }
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7CFC00; }
   .puzzle .im:hover {
     color: #7CFC00;
     cursor: pointer;
@@ -234,5 +236,25 @@ header a {
     -webkit-transition: all 0.5s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
     opacity: 0.89; }
+
+.puzzle .puz2 {
+  color: #000; }
+
+.puzzle .puz6 {
+  color: #000; }
+
+.puzzle .puz7 {
+  color: #000;
+  transform: rotate(8deg); }
+
+.puzzle .puz3 {
+  color: #fff;
+  transform: rotate(-2deg); }
+
+.puzzle .puz4 {
+  color: #fff; }
+
+.puzzle .puz8 {
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

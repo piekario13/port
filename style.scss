@@ -22,7 +22,7 @@ $btn: #7CFC00;
   
   /*HEADER*/
 header {
-  position: fixed;
+  position: absolute;
   background-color: $background;
   width: 100%;
   height: 50px;
@@ -116,12 +116,14 @@ header {
     top: 70px;
     width: 800px;
     left: 20px;
+    transform: rotate(-2deg);
   }
     .puzzle .im {
       font-size: 300px;
       margin: -37.5px;
       color: $background;
-      opacity: 0.9;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $btn;
         &:hover {
           color: $btn;
           cursor: pointer;
@@ -131,3 +133,23 @@ header {
           opacity: 0.89;
         }
     }
+      .puzzle .puz2 {
+        color: #000;
+      }
+      .puzzle .puz6 {
+        color: #000;
+      }
+      .puzzle .puz7 {
+        color: #000;
+        transform: rotate(8deg);
+      }
+      .puzzle .puz3 {
+        color: #fff;
+        transform: rotate(-2deg);
+      }
+      .puzzle .puz4 {
+        color: #fff;
+      }
+      .puzzle .puz8 {
+        color: #fff;
+      }
