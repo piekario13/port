@@ -6,6 +6,7 @@ let divSlogan = document.getElementById('slogan');
 let firstSequence = document.getElementById('sequence');
 let reloadButton = document.getElementById('hiddenButton');
 let menuList = document.getElementById('headerList');
+let puzzelFirst = document.getElementById('puzzelOne');
 
 reloadButton.style.display = "none";
 divSlogan.style.display = "none";
@@ -22,3 +23,7 @@ firstButton.addEventListener('click', function() {
 reloadButton.addEventListener('click', function() {
     window.location.reload(true);
 })
+
+puzzelFirst.addEventListener('click', function() {
+   puzzelFirst.style.visibility="hidden";
+});
